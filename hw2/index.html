@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <span>Обязательно для заполнения:</span><br>
+        <input type="email" id="email" placeholder="Почта" required>
+        <input type="password" id="pass" placeholder="Пароль" required>
+        <input type="text" id="age" placeholder="Возраст" required>
+    </fieldset>
+    <fieldset>
+        <span>Дополнительно:</span><br>
+        <input type="text" id="name" placeholder="Имя"><br>
+        <input type="tel" id="telephone" placeholder="Номер телефона"><br>
+    </fieldset>
+    <button type="submit">Отправить форму</button>
+</form><br>
+<form>
+    <fieldset>
+        <span>Подберите квартиру</span><br>
+        <label>Выберите район
+            <input type="text">
+        </label><br>
+        <label>Cтанция метро
+            <input type="text">
+        </label><br>
+        <label>Улица
+            <input type="text">
+        </label><br>
+        <label for="rooms">Количество комнат</label>
+        <input type="number" id="rooms" placeholder="(1-7)" min="1" max="7">
+
+        <label for='year'>Год сдачи</label>
+        <select id="year" name="year">
+            <option value="2022" selected>2022</option>
+            <option value="2023">2023</option>
+            <option value='ConstantinopoleFall'>1453</option>
+        </select><br>
+        <label>Площадь
+            <input type="number">
+            кв.м.
+        </label><br>
+        <label>С отделкой
+            <input type="radio" name="decoration">
+        </label>
+        <label>Черновая отделка
+            <input type="radio" name="decoration">
+        </label><br>
+
+        <label>Терраса
+            <input type="radio" name="terrace">
+        </label>
+        <label>Без террасы
+            <input type="radio" name="terrace">
+        </label><br>
+        Выберите класс жилья:
+        <label>Бизнес-класс
+            <input type="checkbox">
+        </label>
+        <label>Премиум
+            <input type="checkbox">
+        </label>
+        <label>deluxe
+            <input type="checkbox">
+        </label><br>
+        <label>Выбор этажа
+            <select name="floor">
+                <option value="1" disabled>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12" disabled>12</option>
+            </select><br>
+        </label>
+    </fieldset>
+</form>
+</body>
+</html>
