@@ -8,31 +8,31 @@
 <form>
     <fieldset>
         <span>Обязательно для заполнения:</span><br>
-        <input type="email" id="email" placeholder="Почта" required>
-        <input type="password" id="pass" placeholder="Пароль" required>
-        <input type="text" id="age" placeholder="Возраст" required>
+        <input name="email" type="email" placeholder="Почта" required>
+        <input name="pass" type="password" placeholder="Пароль" required>
+        <input name="age" type="text" placeholder="Возраст" required>
     </fieldset>
     <fieldset>
         <span>Дополнительно:</span><br>
-        <input type="text" id="name" placeholder="Имя"><br>
-        <input type="tel" id="telephone" placeholder="Номер телефона"><br>
+        <input name="name" type="text" placeholder="Имя"><br>
+        <input name="telephone" type="tel" placeholder="Номер телефона"><br>
     </fieldset>
-    <button type="submit">Отправить форму</button>
+    <button name="submit_button" type="submit">Отправить форму</button>
 </form><br>
 <form>
     <fieldset>
         <span>Подберите квартиру</span><br>
         <label>Выберите район
-            <input type="text">
+            <input name="area" type="text">
         </label><br>
         <label>Cтанция метро
-            <input type="text">
+            <input name="subway" type="text">
         </label><br>
         <label>Улица
-            <input type="text">
+            <input name="street" type="text">
         </label><br>
         <label for="rooms">Количество комнат</label>
-        <input type="number" id="rooms" placeholder="(1-7)" min="1" max="7">
+        <input name="rooms" type="number" id="rooms" placeholder="(1-7)" min="1" max="7">
 
         <label for='year'>Год сдачи</label>
         <select id="year" name="year">
@@ -41,31 +41,31 @@
             <option value='ConstantinopoleFall'>1453</option>
         </select><br>
         <label>Площадь
-            <input type="number">
+            <input name="space" type="number">
             кв.м.
         </label><br>
         <label>С отделкой
-            <input type="radio" name="decoration">
+            <input type="radio" name="decoration" value="deco">
         </label>
         <label>Черновая отделка
-            <input type="radio" name="decoration">
+            <input type="radio" name="decoration" value="nodeco">
         </label><br>
 
         <label>Терраса
-            <input type="radio" name="terrace">
+            <input type="radio" name="terrace" value="terrace">
         </label>
         <label>Без террасы
-            <input type="radio" name="terrace">
+            <input type="radio" name="terrace" value="noterrace">
         </label><br>
         Выберите класс жилья:
         <label>Бизнес-класс
-            <input type="checkbox">
+            <input type="checkbox" value="business">
         </label>
         <label>Премиум
-            <input type="checkbox">
+            <input type="checkbox" value="premium">
         </label>
         <label>deluxe
-            <input type="checkbox">
+            <input type="checkbox" value="deluxe">
         </label><br>
         <label>Выбор этажа
             <select name="floor">
