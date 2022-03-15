@@ -1,0 +1,14 @@
+div{
+    height: 100px;
+    padding: 20px;
+}
+a{
+    border-radius: 5px;
+    border-style: solid;
+    padding: 15px 20px;
+    color: red;
+    text-decoration: none;
+}
+a:hover{
+    background-color: orange;
+}

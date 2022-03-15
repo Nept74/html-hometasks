@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul {
+    background-color: orange;
+}
+li{
+    display: inline-block;
+    padding: 10px 10px;
+}
+.invisible{
+    display: none;
+}
+a{
+    font-size: larger;
+    color: red;
+    text-decoration: none;
+    line-height: 1;
+    position: relative;
+}
+a:after {
+    display: block;
+    position: absolute;
+    left: -10px;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    content: "";
+    transition: width 0.3s ease-out;
+}
+a:hover:after,
+a:focus:after {
+    width: 86px;
+}

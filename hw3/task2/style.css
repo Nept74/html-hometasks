@@ -1,0 +1,19 @@
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.red {
+    color: red;
+    text-transform: uppercase;
+}
+.nevermind {
+    text-decoration: red line-through;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+.bold {
+    color: red;
+    font-weight: bold;
+}

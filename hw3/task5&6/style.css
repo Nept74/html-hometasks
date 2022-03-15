@@ -1,0 +1,38 @@
+body{
+    background-image: url("https://i.picsum.photos/id/1000/5626/3635.jpg?hmac=qWh065Fr_M8Oa3sNsdDL8ngWXv2Jb-EE49ZIn6c0P-g");
+    background-attachment: fixed;
+}
+.container{
+    width: 680px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: aquamarine;
+    height: 370px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main_image{
+    width: 100%;
+}
+.small_image{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding-top: 3px;
+}
+.text{
+    vertical-align: middle;
+    width: 60%;
+    padding: 20px 10px 10px;
+}
+span{
+    font-size: larger;
+    text-align: center;
+    vertical-align: middle;
+}
+.middle{
+    margin: auto;
+}

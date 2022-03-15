@@ -1,0 +1,27 @@
+div{
+    margin-bottom: 10px;
+}
+.flex{
+    display: flex;
+}
+h1{
+    background-color: #a265da;
+    text-transform: uppercase;
+    text-align: center;
+}
+img {
+    height: 300px;
+}
+.dog2 {
+    opacity: 0.7;
+    margin: auto;
+}
+.dog3{
+    opacity: 0.5;
+}
+span{
+    font-weight: bold;
+}
+p, span{
+    display: inline;
+}
