@@ -22,6 +22,6 @@ img {
 span{
     font-weight: bold;
 }
-p, span{
+p{
     display: inline;
 }
