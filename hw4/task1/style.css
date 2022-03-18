@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+div {
+    background: lightsteelblue;
+    color: #424242;
+    border: 2px solid #424242;
+    padding: 10px;
+    flex-grow: 1;
+}
+h2{
+    text-align: center;
+}
