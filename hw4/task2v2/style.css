@@ -55,6 +55,8 @@ a, span{
     padding: 10px;
     background-color: #ff6200;
     border: 5px solid #f2ebfc;
+    display: flex;
+    flex-direction: column;
 }
 img{
     max-width: 100%;
@@ -67,4 +69,11 @@ footer{
 }
 footer>h2{
     font-weight: normal;
+}
+span{
+    margin-top: auto;
+}
+.bold{
+    font-weight: bold;
+    text-transform: none;
 }
