@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+header{
+    background-color: saddlebrown;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+ul{
+    list-style: none;
+}
+li{
+    flex-grow: 1;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+.subitem{
+    position: absolute;
+    background-color: saddlebrown;
+    width: 100%;
+    text-align: center;
+}
+.column :nth-child(2){
+    margin-top: 21px;
+}
