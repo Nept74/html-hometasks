@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+header{
+    background-color: saddlebrown;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+ul{
+    list-style: none;
+}
+li{
+    flex-grow: 1;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+}
+.subitem{
+    position: absolute;
+    background-color: saddlebrown;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+}
+.column :nth-child(2){
+    margin-top: 23px;
+}
+.popup:hover+.column{
+    opacity: 1;
+}
+.column:hover{
+    opacity: 1;
+}
+.subitem:hover{
+    border-bottom: 2px solid white;
+}
+main{
+    height: 700px;
+    background-color: darkgoldenrod;
+    position: relative;
+}
+#modal {
+    position: fixed;
+    top: 15%;
+    left: 41%;
+    height: 25%;
+    width: 22%;
+    background-color: saddlebrown;
+    margin: auto;
+    display: none;
+    border-radius: 7px;
+}
+#modal:target{
+    display:block;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 12px;
+}
+form{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+label{
+    color: white;
+    width: 100%;
+}
+.textarea{
+    text-decoration: none;
+    text-transform: none;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    margin-bottom: 5px;
+}
+button{
+    margin-top: 10px;
+    width: 100%;
+}
+#remember{
+    opacity: 0;
+}
+label:before{
+    position: absolute;
+    left: -1px;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000;
+    background-color: white;
+}
+#remember:checked+label:before{
+    content: '\1F5F8';
+    color: saddlebrown;
+}

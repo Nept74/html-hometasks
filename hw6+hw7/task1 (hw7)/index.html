@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <ul class="container">
+        <li><a href="#" >Пункт 1</a></li>
+        <li>
+            <a class="popup" href="#">Пункт 2</a>
+            <ul class="column">
+                <li class="subitem"><a href="#">Подпункт 2.1</a></li>
+                <li class="subitem"><a href="#">Подпункт 2.2</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Пункт 3</a></li>
+        <li><a href="#modal">Личный кабинет</a></li>
+    </ul>
+</header>
+<main>
+<div id="modal">
+    <a href="#" class="close">&#10006;</a>
+    <form>
+        <input class="textarea" type="text" placeholder="Логин"><br>
+        <input class="textarea" type="password" placeholder="Пароль"><br>
+        <input id="remember" type="checkbox">
+        <label for="remember">
+            Запомнить
+        </label><br>
+        <button type="submit">Войти</button>
+    </form>
+
+</div>
+</main>
+</body>
+</html>
